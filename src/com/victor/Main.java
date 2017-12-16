@@ -1,6 +1,7 @@
 package com.victor;
 
 import com.victor.matrix.RotateMatrix;
+import com.victor.shifting.LonleyInteger;
 
 public class Main {
 
@@ -9,11 +10,13 @@ public class Main {
 
         //Init object from RotateMatrix class
         RotateMatrix main = new RotateMatrix();
+        LonleyInteger mLonleyInteger = new LonleyInteger();
+        int lonleyInt = mLonleyInteger.findLonleyInteger(new int[]{1, 2, 3, 5, 6, 7, 6, 5, 2, 1, 3});
 
         String s1 = "watterbottle";
         String s2 = "bottlewatter";
 
-        System.out.println("Is substring: " + s1.contains(s2));
+        //System.out.println("Is substring: " + s1.contains(s2));
 
     }
 
