@@ -1,7 +1,8 @@
 package com.victor;
 
+import com.victor.bitmanipulation.MaximizingXOR;
 import com.victor.matrix.RotateMatrix;
-import com.victor.shifting.LonleyInteger;
+import com.victor.bitmanipulation.LonleyInteger;
 
 public class Main {
 
@@ -10,15 +11,11 @@ public class Main {
 
         //Init object from RotateMatrix class
         RotateMatrix main = new RotateMatrix();
-        LonleyInteger mLonleyInteger = new LonleyInteger();
-        int lonleyInt = mLonleyInteger.findLonleyInteger(new int[]{1, 2, 3, 5, 6, 7, 6, 5, 2, 1, 3});
-
-        String s1 = "watterbottle";
-        String s2 = "bottlewatter";
-
-        //System.out.println("Is substring: " + s1.contains(s2));
+        MaximizingXOR maximizingXOR = new MaximizingXOR();
+        maximizingXOR.findMaxXorInRange(5, 6);
 
     }
+
 
     public void swap(int a[], int i, int j) {
         int tmp = a[j];

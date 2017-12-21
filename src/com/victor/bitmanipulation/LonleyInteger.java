@@ -1,4 +1,4 @@
-package com.victor.shifting;
+package com.victor.bitmanipulation;
 
 /**
  * Created by Victor on 12/16/17.
@@ -22,5 +22,9 @@ public class LonleyInteger {
         }
 
         return lonleyInt;
+    }
+
+    static int comparePoints(Integer aPoints, Integer bPoints) {
+       return aPoints.compareTo(bPoints);
     }
 }
