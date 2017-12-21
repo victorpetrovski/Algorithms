@@ -1,8 +1,11 @@
 package com.victor;
 
+import com.victor.bitmanipulation.CounterGame;
 import com.victor.bitmanipulation.MaximizingXOR;
 import com.victor.matrix.RotateMatrix;
 import com.victor.bitmanipulation.LonleyInteger;
+
+import java.util.Scanner;
 
 public class Main {
 
@@ -11,8 +14,15 @@ public class Main {
 
         //Init object from RotateMatrix class
         RotateMatrix main = new RotateMatrix();
-        MaximizingXOR maximizingXOR = new MaximizingXOR();
-        maximizingXOR.findMaxXorInRange(5, 6);
+
+        Scanner scanner = new Scanner(System.in);
+        int T = scanner.nextInt();
+
+        CounterGame counterGame = new CounterGame();
+        for (int i = 0; i < T; i++) {
+            long N = scanner.nextLong();
+            counterGame.playGame(N);
+        }
 
     }
 
