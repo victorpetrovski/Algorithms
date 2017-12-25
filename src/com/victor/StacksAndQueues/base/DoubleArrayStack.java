@@ -109,21 +109,4 @@ public class DoubleArrayStack<E> {
         return ret;
     }
 
-    public static void main(String[] args) {
-        DoubleArrayStack<Integer> d = new DoubleArrayStack<Integer>(6);
-        d.pushFirst(1);
-        d.pushFirst(2);
-        d.pushFirst(3);
-        d.pushSecond(-1);
-        d.pushSecond(-2);
-        d.pushSecond(-3);
-
-        System.out.println("Vrv na prv: " + d.peekFirst() + ", dolzina na prv: " + d.depth1);
-        System.out.println("Vrv na vtor: " + d.peekSecond() + ", dolzina na vtor: " + d.depth2);
-
-        d.pushFirst(4);
-        d.popFirst();
-        d.pushFirst(4);
-        System.out.println("Vrv na prv: " + d.peekFirst() + ", dolzina na prv: " + d.depth1);
-    }
 }
