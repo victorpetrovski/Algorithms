@@ -1,5 +1,6 @@
 package com.victor;
 
+import com.victor.StacksAndQueues.TwoSum;
 import com.victor.bitmanipulation.CounterGamePowerOfTwo;
 import com.victor.matrix.RotateMatrix;
 
@@ -8,22 +9,22 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
-
-        //Init object from RotateMatrix class
-        RotateMatrix main = new RotateMatrix();
-
-        Scanner scanner = new Scanner(System.in);
-        int T = scanner.nextInt();
-
-        CounterGamePowerOfTwo counterGame = new CounterGamePowerOfTwo();
-        for (int i = 0; i < T; i++) {
-            long N = scanner.nextLong();
-            counterGame.playGame(N);
-        }
-
+        //Test your solution here
+        TwoSum twoSum = new TwoSum();
+        printArray(twoSum.twoSum(new int[]{-3, 4, 3, 90}, 0));
     }
 
+
+    private static void printArray(int[] anArray) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < anArray.length; i++) {
+            if (i > 0) {
+                sb.append(", ");
+            }
+            sb.append(anArray[i]);
+        }
+        System.out.println(sb.toString());
+    }
 
     public void swap(int a[], int i, int j) {
         int tmp = a[j];
