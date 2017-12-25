@@ -1,9 +1,7 @@
 package com.victor;
 
-import com.victor.bitmanipulation.CounterGame;
-import com.victor.bitmanipulation.MaximizingXOR;
+import com.victor.bitmanipulation.CounterGamePowerOfTwo;
 import com.victor.matrix.RotateMatrix;
-import com.victor.bitmanipulation.LonleyInteger;
 
 import java.util.Scanner;
 
@@ -18,7 +16,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int T = scanner.nextInt();
 
-        CounterGame counterGame = new CounterGame();
+        CounterGamePowerOfTwo counterGame = new CounterGamePowerOfTwo();
         for (int i = 0; i < T; i++) {
             long N = scanner.nextLong();
             counterGame.playGame(N);

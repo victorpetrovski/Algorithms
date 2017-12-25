@@ -12,8 +12,6 @@ package com.victor.bitmanipulation;
  * //
  * // Given N, your task is to find the winner of the game.
  */
-
-
 public class CounterGamePowerOfTwo {
 
     private final static String first_player = "Louise";
