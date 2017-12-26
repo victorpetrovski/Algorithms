@@ -1,5 +1,6 @@
 package com.victor;
 
+import com.victor.StacksAndQueues.QueueHeightReconstruction;
 import com.victor.StacksAndQueues.TwoSum;
 import com.victor.bitmanipulation.CounterGamePowerOfTwo;
 import com.victor.matrix.RotateMatrix;
@@ -10,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
         //Test your solution here
-        TwoSum twoSum = new TwoSum();
-        printArray(twoSum.twoSum(new int[]{-3, 4, 3, 90}, 0));
+        QueueHeightReconstruction queueHeightReconstruction = new QueueHeightReconstruction();
+        queueHeightReconstruction.reconstructQueue(new int[][]{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}});
     }
 
 
